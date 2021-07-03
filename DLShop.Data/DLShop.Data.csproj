@@ -52,27 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DLShopDbContext.cs" />
-    <Compile Include="Infractructure\DbFactory.cs" />
-    <Compile Include="Infractructure\Disposable.cs" />
-    <Compile Include="Infractructure\IDbFactory.cs" />
-    <Compile Include="Infractructure\IRepository.cs" />
-    <Compile Include="Infractructure\IUnitOfWork.cs" />
-    <Compile Include="Infractructure\RepositoryBase.cs" />
-    <Compile Include="Infractructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\202107030444270_InitialDB.cs" />
-    <Compile Include="Migrations\202107030444270_InitialDB.designer.cs">
-      <DependentUpon>202107030444270_InitialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ProductCategoryRepository.cs" />
-    <Compile Include="Repositories\ProductRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,15 +63,6 @@
       <Project>{fd67ef39-f081-44fe-b837-f64dc1f40fa6}</Project>
       <Name>DLShop.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DLShop.Model\DLShop.Model.csproj">
-      <Project>{2be46303-cb30-40a7-9a44-708a2a9611e9}</Project>
-      <Name>DLShop.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107030444270_InitialDB.resx">
-      <DependentUpon>202107030444270_InitialDB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
