@@ -9,9 +9,11 @@ namespace DLShop.Model.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public int ID { set; get; }
+
         [Required]
-        public string Name { get; set; }
+        [MaxLength(50)]
+        public string Name { set; get; }
 
         public virtual IEnumerable<Menu> Menus { set; get; }
     }

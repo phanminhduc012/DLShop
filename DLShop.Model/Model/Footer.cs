@@ -7,7 +7,6 @@ namespace DLShop.Model.Model
     public class Footer
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [MaxLength(50)]
         public string ID { get; set; }
         [Required]

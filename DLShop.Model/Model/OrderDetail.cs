@@ -23,7 +23,7 @@ namespace DLShop.Model.Model
         [ForeignKey("OrderID")]
         public virtual Order Order { set; get; }
 
-        [ForeignKey("Product")]
+        [ForeignKey("ProductID")]
         public virtual Product Product { set; get; }
 
     }
