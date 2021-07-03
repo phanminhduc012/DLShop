@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DLShop.Model.Model
 {
-    [Table("VisitorStatistics")]
-    public class VisitorStatistic
+    [Table("VisistorStatistics")]
+    public class VisistorStatistic
     {
         [Key]
         public Guid ID { set; get; }
